@@ -9,4 +9,7 @@ https://patentimages.storage.googleapis.com/35/f1/f7/adb27aeeffa110/US2017001963
 https://patentimages.storage.googleapis.com/04/fb/83/7896b9af8bcf04/US5812787.pdf
 https://patentimages.storage.googleapis.com/2a/09/1d/8bf0dca3edf6c1/WO2008039371A2.pdf
 https://patentimages.storage.googleapis.com/48/c8/34/2baec07b623249/EP3192257A4.pdf
-
+https://link.springer.com/content/pdf/10.1007/s41095-016-0074-0.pdf
+https://hal.archives-ouvertes.fr/file/index/docid/338206/filename/RPCS_2008.pdf
+https://ieeexplore.ieee.org/document/7524018
+https://ieeexplore.ieee.org/document/5604690
