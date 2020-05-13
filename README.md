@@ -1,6 +1,9 @@
 # Real Time Background Substitution
 
-![](images/vector.png)
+<p align="center">
+  <img align="center" width="500" height="450" src="./static/vector.png">
+</p>
+
 ## Running App
 
 Activate virtual environment
