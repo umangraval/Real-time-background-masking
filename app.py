@@ -33,7 +33,7 @@ def upload_file():
             return redirect(request.url)
         if file:
             filename = 'background.jpg'
-            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            file.save(os.path.join(UPLOAD_FOLDER, filename))
             return redirect('/')
 
 
@@ -46,10 +46,6 @@ def resize(dst,img):
 
         
 def gen(key):
-    video = cv2.VideoCapture(0)    
-    # time.sleep(10)
-    success, ref_img = video.read()
-    flag = 0
     cap = cv2.VideoCapture('time.mp4')
     
     # Read until video is completed
@@ -63,6 +59,12 @@ def gen(key):
             time.sleep(0.1)
         else: 
             break
+    
+    video = cv2.VideoCapture(0)    
+    # time.sleep(10)
+    success, ref_img = video.read()
+    flag = 0
+    
     while(1):
         success, img = video.read()
         bg = cv2.imread('./static/background.jpg')

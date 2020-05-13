@@ -1,14 +1,57 @@
 <html>
   <head>
     <title>Video Streaming Demonstration</title>
+  <style>
+    body{
+      text-align: center;
+      background-color: grey;
+      font-family: monospace;
+      margin:0;
+    }
+
+.heading {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: antiquewhite;
+}
+
+.content {
+  margin-top: 100px;
+}
+p {
+  font-weight: bold;
+}
+h2 {
+  color: rgb(223, 43, 43);
+}
+  </style>
   </head>
   <body>
-    <h1>Video Streaming Demonstration</h1>
-    <img id="bg" src="{{ url_for('video_feed') }}">
-    <form action ='/upload' method="POST" 
-         enctype = "multipart/form-data">
-         <input type = "file" name = "file">
-         <input type = "submit">
-      </form>
+    <div class="heading">
+      <h1>Real Time Background Substitution</h1>      
+    </div>
+    <div class="content">
+      <h2>Wait for 3 seconds to capture Background excluding yourself</h2>
+      <img id="bg" src="{{ url_for('video_feed') }}">
+      <p>Rules:</p>
+      <ul>
+        <li>The background should not be window with sunlight</li>
+        <li>THe color of background should not match your skin color or clothes</li>
+        <li>Low light is not advisible</li>
+      </ul>
+      <h3>Insert New Background</h3>
+      <form action ='/upload' method="POST" 
+           enctype = "multipart/form-data">
+           <input type = "file" name = "file">
+           <input type = "submit">
+        </form>
+    </div>
+    
   </body>
 </html>
