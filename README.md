@@ -1,5 +1,6 @@
 # Real Time Background Substitution
 
+![](images/vector.png)
 ## Running App
 
 Activate virtual environment
