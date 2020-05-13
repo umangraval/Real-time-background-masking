@@ -5,5 +5,10 @@
   <body>
     <h1>Video Streaming Demonstration</h1>
     <img id="bg" src="{{ url_for('video_feed') }}">
+    <form action ='/upload' method="POST" 
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file">
+         <input type = "submit">
+      </form>
   </body>
 </html>
