@@ -4,7 +4,7 @@
 ![Requires.io](https://img.shields.io/requires/github/umangraval/Real-time-background-masking)
 
 <p align="center">
-  <img align="center" width="500" height="450" src="./static/vector.png">
+  <img align="center" width="500" height="450" src="./app/static/vector.png">
 </p>
 
 ## Running App
