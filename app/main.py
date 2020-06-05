@@ -80,8 +80,12 @@ def gen(key):
         gray[np.abs(gray)< 10] = 0
         fgmask=gray.astype(np.uint8)
         fgmask[fgmask>5]=255
+        fgmask = cv2.medianBlur(fgmask,5)
+        
         #invert the mask
         fgmask_inv = cv2.bitwise_not(fgmask)
+        fgmask_inv = cv2.medianBlur(fgmask_inv,5)
+
         #use the mask to extract the relevent parts from FG and BG
         fgimg = cv2.bitwise_and(img,img,mask=fgmask)
         bgimg = cv2.bitwise_and(bg,bg,mask=fgmask_inv)
