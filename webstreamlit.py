@@ -40,7 +40,7 @@ while(1):
     bgimg = cv2.bitwise_and(bg,bg,mask=fgmask_inv)
     #combine both bg and fg images
     dst = cv2.add(bgimg, fgimg)
-    # cv2.imshow('Backgroung removal', dst)
+    cv2.imshow('Backgroung removal', dst)
     
     key = cv2.waitKey(5) & 0xFF
     if ord('q') == key:
