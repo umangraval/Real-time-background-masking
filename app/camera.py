@@ -23,6 +23,7 @@ class VideoCamera(object):
     
     def get_frame(self):
         success, ref_img = self.video.read()    
+        ref_img = cv2.cvtColor(ref_img, cv2.COLOR_BGR2GRAY)
         # time.sleep(10)
         # flag = 0
         
