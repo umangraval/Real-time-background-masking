@@ -41,7 +41,7 @@ python test.py
 ### Background mask
 <img src="app/static/Screenshot from 2020-06-06 10-54-23.png" width="300">
 
-### After applying mask
+### After Applying mask
 <img src="app/static/Screenshot from 2020-06-06 10-50-05.png" width="300">
 
 ### After Histogram Equalization
